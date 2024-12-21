@@ -67,7 +67,11 @@ def mutate():
 
 	print(admission_response)
 	return jsonify(admission_response)
-
+	
+@app.route('/fujg', methods=['GET',])  # https://webhook-service.default.svc:443/mutate
+def fujg_test():
+	"测试代码 没啥用"
+	return "hello world from fujg"
 
 if __name__ == '__main__':
 	# 加载 SSL 证书和私钥
